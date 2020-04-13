@@ -1,0 +1,30 @@
+GIT DOWNLOAD:
+https://github.com/git-for-windows/git/releases/download/v2.26.0.windows.1/Git-2.26.0-64-bit.exe
+
+ADD TO USERNAME AND PASSWORD:
+git config -- global user.name "Raheel Siddiqui"
+git config -- global user.email "rawheeelalisiddiqui@gmail.com"
+
+CONECT GITHUB Repository:
+git remote add origin git@github.com:raheeelali/hello.git
+
+SSH KEY (Connect Github accounts):
+Goto
+ >> Settings 
+>> SSH and GPG keys
+>> Generating SSH keys
+>>  Generating a new SSH key and adding it to the ssh-agent
+>> ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+>> eval $(ssh-agent -s)
+>> ssh-add ~/.ssh/id_rsa
+>> Add SSH KEY
+>> clip < ~/.ssh/id_rsa.pub
+
+
+BASIC COMMANDS:
+
+git status
+git clone
+git add .
+git commit -m "comment name"
+git push
