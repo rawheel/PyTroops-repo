@@ -28,3 +28,20 @@ git clone
 git add .
 git commit -m "comment name"
 git push
+
+Branching:
+	git branch (to see how many branches)
+	git branch BRANCHNAME (to create new branch)
+	git checkout BRANCHNAME (to enter in created branch)
+	git add .
+	git commit -m "add comment"
+	git push origin "BRANCH NAME"
+
+	To merge in master:
+		git checkout master
+		git merge BRANCHNAME
+		git push -u origin master
+
+	Now delete login system:
+		git branch -d BRANCHNAME(to delete branch in computer)
+		git push origin --delete login system
